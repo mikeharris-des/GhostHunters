@@ -1,12 +1,12 @@
-*************************************************************************************************************************
+*******************************************************************************************************************
 
 NAME: 		MICHAEL HARRIS ANASTASAKIS
 LANGUAGE:   C
 PURPOSE:    This program is a simulation of a haunted building using multithreading implemented
-			with multiple semaphore mutex locks. The threads are various Ghost Hunters and a
-			single ghost all moving throughout the building concurrently. The building has rooms,
-			doors, hunters, ghosts, and evidence of the ghost's presence. The simulation runs a
-			series of actions, such as hunters moving between rooms, finding and collecting
+            with multiple semaphore mutex locks. The threads are various Ghost Hunters and a
+	    single ghost all moving throughout the building concurrently. The building has rooms,
+            doors, hunters, ghosts, and evidence of the ghost's presence. The simulation runs a
+            series of actions, such as hunters moving between rooms, finding and collecting
             evidence, and attempts to banish the ghost based on the evidence they found. The
             program keeps track of hunter's fear and boredom levels, which affect their behaviour
             and exit conditions. The simulation determines whether the hunters are successful
@@ -20,13 +20,13 @@ PROGRAM FILES:  	building.c  defs.h  ghost.o  logger.o  main.c  Makefile  README
 PROGRAM REQUIREMENTS: 	linux based operating system (Tested on UBUNTU 22.04)
 
 ACKNOWLEDGEMENTS:
-    I would like to express my gratitude to Professor Connor Hillen for providing the initial outline and specifications
-    for several C assignments during my time at University. These assignments served as the foundation for the final
-    project for this class and the project presented here is the direct result of his specification requirements and his
-    inclusion of the logger.o (console logging implementation) and ghost.o (ghost thread entity) files, as well as the
-    base map layout.
+    I would like to express my gratitude to Professor Connor Hillen for providing the initial outline and 
+    specifications for several C assignments during my time at University. These assignments served as the 
+    foundation for the final project for this class and the project presented here is the direct result of his
+    specification requirements and his inclusion of the logger.o (console logging implementation) and ghost.o
+    (ghost thread entity) files, as well as the base map layout.
 
-*************************************************************************************************************************
+*******************************************************************************************************************
 
 FILE:		main.c
 
@@ -52,12 +52,13 @@ PURPOSE: 	Execution of Program calling all primary functions in desired order wi
 				4. Find a random room for the ghost to start in and display the room name.
 				5. Initialize the ghost and place it in the selected room.
 				6. Initialize and start threads for the simulation.
-				7. Run the simulation and obtain the result (success or failure in banishing the ghost
-				corresponding to exit condition of all threads).
-				8. Print the results of the simulation, including winner, hunter stats, and journal entries.
+				7. Run the simulation and obtain the result (success or failure in banishing the
+                                ghost corresponding to exit condition of all threads).
+				8. Print the results of the simulation, including winner, hunter stats, and
+                                journal entries.
 				9. Free up memory resources used in the simulation.
 
-*************************************************************************************************************************
+*******************************************************************************************************************
 
 FILE:		building.c
 
@@ -72,7 +73,7 @@ PURPOSE: 	The purpose of this file is to implement the populateBuilding() functi
 		and connections must be well thought out before being implemented or the program
 		may fail in execution.
 
-*************************************************************************************************************************
+*******************************************************************************************************************
 
 FILE: 		defs.h
 
@@ -82,7 +83,7 @@ FILE PURPOSE:	a header file containing program definitions, data structures, enu
 		essential for the program, a logging function, typedefs, and forward declarations
 		for structs and enums, as well as the initialization of prototype functions.
 
-*************************************************************************************************************************
+*******************************************************************************************************************
 
 FILE: 		Makefile
 
@@ -90,7 +91,7 @@ FILE PURPOSE:	utilizes the 'make' utility from the OS to compile and link all fi
 		suppressors / commands necessary to execute this program and is consistent, organized and
 		convenient for any user
 
-*************************************************************************************************************************
+*******************************************************************************************************************
 
 
 	[ EXTRACTION | COMPILATION | EXECUTION | INSTRUCTIONS ]
@@ -122,7 +123,7 @@ FILE PURPOSE:	utilizes the 'make' utility from the OS to compile and link all fi
 	    	make clean
 
 
-*************************************************************************************************************************
+*******************************************************************************************************************
 
 
 	[ EXECUTION ]
@@ -197,7 +198,7 @@ FILE PURPOSE:	utilizes the 'make' utility from the OS to compile and link all fi
 		....
 		....
 		....
-																"
+														"
 
 		[ HUNTER EXIT FROM FEAR EXAMPLE ]
 
@@ -213,14 +214,14 @@ FILE PURPOSE:	utilizes the 'make' utility from the OS to compile and link all fi
 		*[VENKMAN] IS WAITING FOR BACKUP IN HALLWAY S
 		[HUNTER MOVE] [SPENGLER] has moved into [VAN]
 		*[VENKMAN] IS WAITING FOR BACKUP IN HALLWAY S
-		[GHOST HAUNTING] Haunting the room [HALLWAY S]				<--- note the ghost haunts in same room
+		[GHOST HAUNTING] Haunting the room [HALLWAY S]		<--- note the ghost haunts in same room
 		[HUNTER MOVE] [VENKMAN] has moved into [HALLWAY N]
-		[HUNTER EXIT] [VENKMAN] exited because [AFRAID]				<--- note the hunter moved then exit
+		[HUNTER EXIT] [VENKMAN] exited because [AFRAID]		<--- note the hunter moved then exit
 		....
 		....
 		....
 
-																"
+														"
 		[ HUNTERS BANISH GHOST EXAMPLE ]
 
 	"	....
@@ -258,7 +259,8 @@ FILE PURPOSE:	utilizes the 'make' utility from the OS to compile and link all fi
 		[HUNTER MOVE] [VENKMAN] has moved into [HALLWAY N]
 
 		**** HUNTERS [RAY] AND [VENKMAN] WILL NOW ATTEMPT TO BANISH THE GHOST IN HALLWAY N ****
-		**** HUNTERS [RAY] AND [VENKMAN] SUCCESSFULLY BANISHED THE GHOST MENACE CORRECTLY CALLING TO THE BULLIES ****
+		**** HUNTERS [RAY] AND [VENKMAN] SUCCESSFULLY BANISHED THE GHOST MENACE CORRECTLY CALLING TO THE
+		BULLIES ****
 
 		[HUNTER MOVE] [SPENGLER] has moved into [BATHROOM]
 		[GHOST EXIT] Exited because [BANISHED]
@@ -286,13 +288,13 @@ FILE PURPOSE:	utilizes the 'make' utility from the OS to compile and link all fi
 		 ---------------------------------------------------
 		|                 AFTER ACTION REPORT               |
 		 ---------------------------------------------------
-		|						    						|
+		|			                            |
 		| THE VICTOR:                  *** THE HUNTERS ***  |
-		|						    						|
-		| *HUNTERS TOTAL ATTEMPTS TO BANISH: 		 	1  	|
-		|						    						|
+		|						    |
+		| *HUNTERS TOTAL ATTEMPTS TO BANISH: 	    1  	    |
+		|						    |
 		| *HUNTERS CONCLUDE GHOST IS:              BULLIES  |
-		|						    						|
+		|						    |
 		 ---------------------------------------------------
 
 		 FINAL HUNTER STATS
@@ -358,13 +360,7 @@ FILE PURPOSE:	utilizes the 'make' utility from the OS to compile and link all fi
 		| FINGERPRINTS  |    WINSTON   |        HALLWAY N   |
 		|  TEMPERATURE  |        RAY   |        HALLWAY N   |
 		 ---------------------------------------------------
-																"
-
-
-
-
-
-
+														"
 
 
 

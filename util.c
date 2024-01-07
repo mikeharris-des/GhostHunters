@@ -1,20 +1,18 @@
-/**********************************************************************************************
-NAME: MICHAEL HARRIS ANASTASAKIS
-STUDENT#: 101047439
-CLASS: COMP2401-A | WINTER 2023
-ASSIGNMENT: A5 "SIMULATING THE HUNT" | LOCKS AND THREADS
-LANGUAGE:   C 
-PURPOSE:    This program is a simulation of a haunted building using multithreading implemented with
-            multiple semaphore mutex locks. The threads are various Ghost Hunters and a single ghost all 
-            moving throughout the building concurrently. The building has rooms, doors, 
-            hunters, ghosts, and evidence of the ghost's presence. The simulation runs 
-            a series of actions, such as hunters moving between rooms, finding and collecting 
-            evidence, and attempts to banish the ghost based on the evidence they found. The 
-            program keeps track of hunter's fear and boredom levels, which affect their behavior 
-            and exit conditions. The simulation determines whether the hunters are successful 
-            in banishing the ghost or if the ghost prevails causing the hunters to flee in fear. 
-            Upon completion of the simulation the program provides a summary of the simulation 
-            results, including the victor (hunters or ghost), hunter stats, and all evidence 
+/*******************************************************************************************************************
+
+NAME: 		MICHAEL HARRIS ANASTASAKIS
+LANGUAGE:   C
+PURPOSE:    This program is a simulation of a haunted building using multithreading implemented
+            with multiple semaphore mutex locks. The threads are various Ghost Hunters and a
+	    single ghost all moving throughout the building concurrently. The building has rooms,
+            doors, hunters, ghosts, and evidence of the ghost's presence. The simulation runs a
+            series of actions, such as hunters moving between rooms, finding and collecting
+            evidence, and attempts to banish the ghost based on the evidence they found. The
+            program keeps track of hunter's fear and boredom levels, which affect their behaviour
+            and exit conditions. The simulation determines whether the hunters are successful
+            in banishing the ghost or if the ghost prevails causing the hunters to flee in fear.
+            Upon completion of the simulation the program provides a summary of the simulation
+            results, including the victor (hunters or ghost), hunter stats, and all evidence
             collected by hunters throughout the simulation.
 FILE:   util.c
 FILE PURPOSE:   contains utility functions that contain routine code multiple times throughout program

@@ -11,10 +11,6 @@ void populateBuilding(BuildingType* building) {
     /*
         * Requires that the building has been initialized with initBuilding()
         * Requires that initRoom and connectRooms have been implemented
-        * You are allowed to modify this function, but the room connections
-        * must remain the same. The overall map MUST be the same, with the same names
-        * and the same connections. Failure to do so will result in major
-        * deductions.
     */
 
     // Room names array

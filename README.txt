@@ -23,8 +23,8 @@ ACKNOWLEDGEMENTS:
     I would like to express my gratitude to Professor Connor Hillen for providing the initial outline and 
     specifications for several C assignments during my time at University. These assignments served as the 
     foundation for the final project for this class and the project presented here is the result of his
-    specification requirements and his inclusion of the logger.o (console logging implementation) and ghost.o
-    (ghost thread entity) files, as well as the design of the base map layout.
+    specification requirements and his inclusion of the logger.o (console logging implementation), ghost.o
+    (ghost thread entity) and building.c files, as well as the design of the base map layout.
 
 *******************************************************************************************************************
 

@@ -72,9 +72,7 @@ FILE PURPOSE:  a header file containing program definitions, data structures, en
 
 // updated 0404 NOLEAK 4 HUNTERS 1 GHOST | HAS EVIDENCE NOLEAK | BANISHMENT NOLEAKS HOTFIX3 | DONE
 
-/*  By putting DIRECTION_COUNT at the end, it defaults to 
-    the number of things in the enum! It's a helpful trick for
-    defining the size.
+/*  By putting DIRECTION_COUNT at the end to define enum size
 */
 enum Direction { NORTH, SOUTH, EAST, WEST, DIRECTION_COUNT };
 

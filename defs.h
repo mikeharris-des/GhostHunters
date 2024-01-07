@@ -196,7 +196,7 @@ void clearJournal(JournalType* journal);
 void printResults(BuildingType* building, int results);
 void freeBuilding(BuildingType** building);
 
-/* Utility Functions: Feel free to modify */
+/* Utility Functions */
 
 void slowThread();
 GhostCategoryType typeFromEvidence(JournalType* evidence);
@@ -205,7 +205,6 @@ DirectionType getOppositeDirection(DirectionType dir);
 void ghostToString(GhostCategoryType type, char* str);
 void pBreak(int type);
 
-/* Library Declarations: Do not make any modifications to the below definitions */
 /* Ghost Functions Implemented in ghost.o */
 
 void initGhost(GhostType** ghost, RoomType* room);

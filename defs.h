@@ -43,8 +43,8 @@ FILE PURPOSE:  a header file containing program definitions, data structures, en
 #define MAX_STR         64      // max characters in character array
 #define MAX_ROOMS       16      // max rooms in a building
 #define MAX_DOORS       16      // max doors in a building 
-#define MIN_WAIT        1000    // minimum time of waiting in slowThread() function use dthusly: ' usleep(MIN_WAIT + rand() % MAX_WAIT) '
-#define MAX_WAIT        5000    // maximum time of waiting in slowThread() function use dthusly: ' usleep(MIN_WAIT + rand() % MAX_WAIT) '
+#define MIN_WAIT        1000    // minimum time of waiting in slowThread() eg: ' usleep(MIN_WAIT + rand() % MAX_WAIT) '
+#define MAX_WAIT        5000    // maximum time of waiting in slowThread() eg: ' usleep(MIN_WAIT + rand() % MAX_WAIT) '
 #define GHOST_WAIT      10000   // consistent wait time for ghost thread
 #define GHOST_EV_PROB   30      // probability of ghost dropping evidence ( 30 = %30 )
 #define LOGGING_ENABLED 1       // boolean true

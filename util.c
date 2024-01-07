@@ -49,9 +49,8 @@ GhostCategoryType typeFromEvidence(JournalType* evidence) {
     int count = 0;
     EvidenceNodeType* current = evidence->head;
 
-    // We're using bitwise OR to combine the evidence types
-    // And our GhostCategoryType is setup to align with the 
-    // bits correctly
+    // using bitwise OR to combine the evidence types
+    // And our GhostCategoryType is setup to align with the bits
     while (current != NULL) {
         type |= current->evidence->type;
         current = current->next;

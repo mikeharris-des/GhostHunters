@@ -76,7 +76,7 @@ FILE PURPOSE:  a header file containing program definitions, data structures, en
 */
 enum Direction { NORTH, SOUTH, EAST, WEST, DIRECTION_COUNT };
 
-/* By using bits like this, we can actually construct a GhostCategory from its evidence! */
+/* construct a GhostCategory from its evidence */
 enum EvidenceCategory {
     EMF                 = 1 << 0, // 0b0001
     FINGERPRINTS        = 1 << 1, // 0b0010
@@ -93,14 +93,6 @@ enum GhostCategory {
     UNKNOWN_GHOST   = 0xFF                                  // 0b11111111    
 };
 
-/*  When working with lots of connected structures, forward declaring is often
-    best to avoid circular dependencies. This just does the typedefs for us
-    so that we can refer to the types before they've been defined!
-
-    Also, the Ghost uses the full struct/enum names, so you can change the typedef 
-    to use any naming convention you want, including camel_case. When working in VS Code,
-    "F2" while selecting the Type name will let you rename it everywhere it's used.
-*/
 typedef struct Room RoomType;
 typedef struct Building BuildingType;
 typedef struct Door DoorType;

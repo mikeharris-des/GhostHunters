@@ -71,13 +71,6 @@ GhostCategoryType typeFromEvidence(JournalType* evidence) {
     Returns: void
 */
 void evidenceToString(EvidenceCategoryType evidence, char* buffer) {
-    
-    /*  strncpy, and setting the last char to \0 OR strlcpy 
-        would be safer than strcpy, but because we know the
-        buffer size is going to be set to MAX_STR and we know
-        the literal strings are less, we can use strcpy
-        for this simple example.    
-    */
     switch (evidence) {
         case EMF:
             strcpy(buffer, "EMF");
